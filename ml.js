@@ -22,17 +22,17 @@ define(['require', './assets/templates/htmltemplate.html!text', './assets/templa
 
         this.onMIDIMessage = function (message, when) {
             var key, msgString = '', value = message[key];
-            // If key is number
-            if (! isNaN (value - 0) && value !== null) {
-                // Round it to three decimals
-                value = Math.round(value * 1000) / 1000;
-            }
+            
             // Build the html
             for (key in message) {
+                value = message[key];
                 msgString += '<div class="midi-block"> <span class="key">' + key + ":" + '</span><span class="message">' + value + "</span></div>";
             }
-            // Add when
-            msgString += '<div class="midi-block"> <span class="key">when:</span><span class="message">' + when + "</span></div>";
+            
+            // Add when, rounded to three decimals.
+            var w = Math.round(when * 1000) / 1000;
+            msgString += '<div class="midi-block"> <span class="key">when:</span><span class="message">' + w + "</span></div>";
+
             // Overwrite the content of the container div
             this.containerDiv.innerHTML = msgString;
         }.bind(this);
