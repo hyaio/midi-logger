@@ -22,7 +22,7 @@ define(['require', './assets/templates/htmltemplate.html!text', './assets/templa
         this.onMIDIMessage = function (message, when) {
             var key, msgString = '';
             for (key in message) {
-                msgString += '<div> <span class="key">' + key + ":" + '</span><span class="message">' + message[key] + "</span></div>";
+                msgString += '<div class="midi-block"> <span class="key">' + key + ":" + '</span><span class="message">' + message[key] + "</span></div>";
             }
             this.containerDiv.innerHTML = msgString;
         }.bind(this);
