@@ -1,0 +1,20 @@
+.container {
+  background: black;
+  width: 80%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  color: white;
+  padding:15px;
+}
+.midi-block {
+  display: block;
+}
+.key {
+  color: MediumSeaGreen;
+  font-family: Consolas, monaco, monospace;
+}
+.message {
+  padding-left: 10px;
+  color: LightSalmon;
+  font-family: Consolas, monaco, monospace;
+}
