@@ -1,13 +1,15 @@
 .container {
   background: black;
-  width: 80%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
   color: white;
-  padding:15px;
+  padding: 15px;
 }
 .midi-block {
   display: block;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
 .key {
   color: MediumSeaGreen;
