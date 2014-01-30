@@ -4,12 +4,12 @@
   font-weight: 300;
   color: white;
   padding: 15px;
-}
-.midi-block {
-  display: block;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+.midi-block {
+  display: block;
 }
 .key {
   color: MediumSeaGreen;
