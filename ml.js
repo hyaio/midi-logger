@@ -24,6 +24,7 @@ define(['require', './assets/templates/htmltemplate.html!text', './assets/templa
             for (key in message) {
                 msgString += '<div class="midi-block"> <span class="key">' + key + ":" + '</span><span class="message">' + message[key] + "</span></div>";
             }
+            msgString += '<div class="midi-block"> <span class="key">when:</span><span class="message">' + when + "</span></div>";
             this.containerDiv.innerHTML = msgString;
         }.bind(this);
 
