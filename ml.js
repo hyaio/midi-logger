@@ -2,7 +2,6 @@ define(['require', './assets/templates/htmltemplate.html!text', './assets/templa
 
     var pluginConf = {
         name: "MIDI Logger",
-        osc: false,
         version: '0.0.1',
         hyaId: 'EXMIDILOG',
         ui: {
